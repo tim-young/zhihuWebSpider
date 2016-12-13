@@ -19,7 +19,7 @@ CREATE TABLE `user_base_info` (
   `agreeNums` int(11) DEFAULT '0' COMMENT '赞同',
   `thanksNums` int(11) DEFAULT '0' COMMENT '感谢',
   `lastDynamic`varchar(20) DEFAULT NULL COMMENT '最近动态(未处理)',
-  `lastDynamicTime` timestamp DEFAULT '0000-00-00 00:00:00', COMMENT '最近动态（处理后）',
+  `lastDynamicTime` timestamp DEFAULT '0000-00-00 00:00:00' COMMENT '最近动态（处理后）',
   `addtime` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '添加时间',
   PRIMARY KEY (`id`),
   unique(`pageUrl`)
